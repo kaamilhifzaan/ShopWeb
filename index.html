@@ -13,9 +13,9 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <section class="header py-5">
+    <section class="header">
       <div>
-        <header class="d-flex px-4 py-3">
+        <header class="d-flex ps-2 pe-0 ps-lg-4 pe-lg-0 py-3">
           <ul class="nav nav-pills">
             <li class="nav-item fs-5">
               <a href="#home" class="nav-link text-info">Home</a>
@@ -36,30 +36,31 @@
         </header>
       </div>
     </section>
-    <section class="hero py-5">
+    <section class="hero py">
       <div
-        class="row flex-lg-row-reverse align-items-center g-5 mt-5 home"
+        class="row flex-lg-row-reverse align-items-center g-5 home"
         id="home"
       >
-        <div class="col-10 col-sm-8 col-lg-6 px-5">
+        <!-- column: full width on xs, larger on md (tablets), normal on lg -->
+        <div class="col-12 col-sm-10 col-md-10 col-lg-6 ps-5 pe-0">
           <div class="card-frame">
             <img
               src="./webimg.jpg"
-              class="d-block mx-lg-auto img-fluid rounded-5"
+              class="d-block mx-lg-auto img-fluid rounded-5 w-100"
               alt="Responsive design demonstration"
-              width="700"
-              height="500"
               loading="lazy"
             />
           </div>
         </div>
 
         <div class="col-lg-6">
-          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3 px-5">
+          <h1
+            class="display-5 fw-bold text-body-emphasis lh-1 mb-3 ps-4 pe-0 ps-lg-5 pe-lg-0"
+          >
             <span class="text-info">Customized.Responsive.User friendly</span>
             Websites made Affordable
           </h1>
-          <p class="lead px-5 fs-4">
+          <p class="lead ps-4 pe-0 ps-lg-5 pe-lg-0 fs-4">
             We craft customized, responsive, and user-friendly websites that are
             modern, intuitive, and visually appealing, adapting seamlessly to
             every device while delivering a smooth, seamless experience—all made
@@ -72,11 +73,17 @@
             packed with informative, valuable content that's engaging and
             accessible, driving results without breaking the bank
           </p>
-          <div class="d-grid gap-2 d-md-flex justify-content-md-start px-5">
+          <div
+            class="d-grid gap-2 d-md-flex justify-content-md-start ps-4 pe-0 ps-lg-5 pe-lg-0"
+          >
             <button type="button" class="btn btn-info btn-lg px-4 me-md-2 fs-4">
               Buy Now
             </button>
-            <a type="button" href="./contact.html"class="btn btn-outline-info btn-lg px-4 fs-4">
+            <a
+              type="button"
+              href="./contact.html"
+              class="btn btn-outline-info btn-lg px-4 fs-4"
+            >
               Contact Us
             </a>
           </div>
@@ -84,8 +91,10 @@
       </div>
     </section>
     <section class="features py-5"></section>
-    <h2 id="feature" class="pb-2 border-bottom px-5 mt-5 fs-1">Features</h2>
-    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3 px-5">
+    <h2 id="feature" class="pb-2 border-bottom ps-4 pe-0 ps-lg-5 pe-lg-0 mt-5 fs-1">
+      Features
+    </h2>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3 ps-4 pe-0 ps-lg-5 pe-lg-0">
       <div class="col d-flex align-items-start">
         <div
           class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"
@@ -148,221 +157,231 @@
       </div>
     </div>
     <section class="pricings py-5">
-      <div class="container py-3" id="pricing">
-        <header>
-          <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-            <h2 class="display-4 fw-normal text-body-emphasis">Pricing</h2>
-            <p class="fs-4 text-body-secondary">
-              Quickly launch a professional website with simple, transparent
-              plans designed for businesses and startups.
-            </p>
-          </div>
-        </header>
-        <main>
-          <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-            <div class="col">
-              <div class="card mb-4 rounded-3 shadow-sm">
-                <div class="card-header py-3">
-                  <h4 class="my-0 fw-normal">Starter site</h4>
-                </div>
-                <div class="card-body">
-                  <h1 class="card-title pricing-card-title">
-                    ₹3999<small class="text-body-secondary fw-light"
-                      >/website</small
+      <div class="container-fluid py-3">
+        <div class="container px-2 px-sm-3 px-md-4" id="pricing">
+          <header>
+            <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+              <h2 class="display-4 fw-normal text-body-emphasis">Pricing</h2>
+              <p class="fs-4 text-body-secondary">
+                Quickly launch a professional website with simple, transparent
+                plans designed for businesses and startups.
+              </p>
+            </div>
+          </header>
+          <main>
+            <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+              <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                  <div class="card-header py-3">
+                    <h4 class="my-0 fw-normal">Starter site</h4>
+                  </div>
+                  <div class="card-body">
+                    <h1 class="card-title pricing-card-title">
+                      ₹3999<small class="text-body-secondary fw-light"
+                        >/website</small
+                      >
+                    </h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                      <li>Upto 3 pages</li>
+                      <li>Mobile-responsive layout</li>
+                      <li>Basic contact form</li>
+                      <li>Delivery within 5 days</li>
+                    </ul>
+                    <button
+                      type="button"
+                      class="w-100 btn btn-lg btn-outline-info"
                     >
-                  </h1>
-                  <ul class="list-unstyled mt-3 mb-4">
-                    <li>Upto 3 pages</li>
-                    <li>Mobile-responsive layout</li>
-                    <li>Basic contact form</li>
-                    <li>Delivery within 5 days</li>
-                  </ul>
-                  <button
-                    type="button"
-                    class="w-100 btn btn-lg btn-outline-info"
-                  >
-                    Buy Now
-                  </button>
+                      Buy Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                  <div class="card-header py-3">
+                    <h4 class="my-0 fw-normal">Growth site</h4>
+                  </div>
+                  <div class="card-body">
+                    <h1 class="card-title pricing-card-title">
+                      ₹4999<small class="text-body-secondary fw-light"
+                        >/website</small
+                      >
+                    </h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                      <li>Up to 6 pages</li>
+                      <li>Custom design matching your brand</li>
+                      <li>Basic SEO setup</li>
+                      <li>WhatsApp / email enquiry forms</li>
+                      <li>1 month support for minor changes</li>
+                    </ul>
+                    <button type="button" class="w-100 btn btn-lg btn-info">
+                      Buy Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm border-info">
+                  <div class="card-header py-3 text-bg-info border-info">
+                    <h4 class="my-0 fw-normal">Business site</h4>
+                  </div>
+                  <div class="card-body">
+                    <h1 class="card-title pricing-card-title">
+                      ₹7999<small class="text-body-secondary fw-light"
+                        >/website</small
+                      >
+                    </h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                      <li>Up to 12 pages</li>
+                      <li>Advanced UI with animations</li>
+                      <li>Blog or portfolio section</li>
+                      <li>Performance & SEO optimization</li>
+                      <li>3 months priority support and updates</li>
+                    </ul>
+                    <a
+                      href="./contact.html"
+                      type="button"
+                      class="w-100 btn btn-lg btn-info"
+                    >
+                      Contact us
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col">
-              <div class="card mb-4 rounded-3 shadow-sm">
-                <div class="card-header py-3">
-                  <h4 class="my-0 fw-normal">Growth site</h4>
-                </div>
-                <div class="card-body">
-                  <h1 class="card-title pricing-card-title">
-                    ₹4999<small class="text-body-secondary fw-light"
-                      >/website</small
-                    >
-                  </h1>
-                  <ul class="list-unstyled mt-3 mb-4">
-                    <li>Up to 6 pages</li>
-                    <li>Custom design matching your brand</li>
-                    <li>Basic SEO setup</li>
-                    <li>WhatsApp / email enquiry forms</li>
-                    <li>1 month support for minor changes</li>
-                  </ul>
-                  <button type="button" class="w-100 btn btn-lg btn-info">
-                    Buy Now
-                  </button>
-                </div>
-              </div>
+            <h2 class="display-6 text-center mb-4 fs-1">Compare plans</h2>
+            <div class="table-responsive">
+              <table class="table table-custom text-center">
+                <thead>
+                  <tr>
+                    <th style="width: 34%"></th>
+                    <th style="width: 22%" class="text-info fs-4">Starter</th>
+                    <th style="width: 22%" class="text-info fs-4">Growth</th>
+                    <th style="width: 22%" class="text-info fs-4">Business</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row" class="text-start fs-5">Pages included</th>
+                    <td>
+                      <p class="fs-5">3</p>
+                    </td>
+                    <td>
+                      <p class="fs-5">6</p>
+                    </td>
+                    <td>
+                      <p class="fs-5">12</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="text-start fs-5">Custom Design</th>
+                    <td>
+                      <p class="fs-5">Basic</p>
+                    </td>
+                    <td>
+                      <p class="fs-5">Advanced</p>
+                    </td>
+                    <td>
+                      <p class="fs-5">Premium</p>
+                    </td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <th scope="row" class="text-start fs-5">
+                      Mobile Responsive
+                    </th>
+                    <td>
+                      <img
+                        src="./tick.svg"
+                        class="bi"
+                        width="24"
+                        height="24"
+                        aria-hidden="true"
+                        alt="tick"
+                      />
+                    </td>
+                    <td>
+                      <img
+                        src="./tick.svg"
+                        class="bi"
+                        width="24"
+                        height="24"
+                        aria-hidden="true"
+                        alt="tick"
+                      />
+                    </td>
+                    <td>
+                      <img
+                        src="./tick.svg"
+                        class="bi"
+                        width="24"
+                        height="24"
+                        aria-hidden="true"
+                        alt="tick"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="text-start fs-5">
+                      Contact / Enquiry forms
+                    </th>
+                    <td>
+                      <p class="fs-5">Basic</p>
+                    </td>
+                    <td>
+                      <p class="fs-5">Better</p>
+                    </td>
+                    <td>
+                      <p class="fs-5">Advanced</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="text-start fs-5">
+                      Blog / Portfolio section
+                    </th>
+                    <td><p class="fs-5">Unavailable</p></td>
+                    <td>
+                      <p class="fs-5">Optional</p>
+                    </td>
+                    <td>
+                      <img
+                        src="./tick.svg"
+                        class="bi"
+                        width="24"
+                        height="24"
+                        aria-hidden="true"
+                        alt="tick"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="text-start fs-5">
+                      SEO Optimization
+                    </th>
+                    <td><p class="fs-5">Basic</p></td>
+                    <td><p class="fs-5">Standard</p></td>
+                    <td>
+                      <p class="fs-5">Advanced</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="text-start fs-5">
+                      Post-Launch support
+                    </th>
+                    <td><p class="fs-5">7 Days</p></td>
+                    <td>
+                      <p class="fs-5">1 Month</p>
+                    </td>
+                    <td>
+                      <p class="fs-5">3 Months</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
-            <div class="col">
-              <div class="card mb-4 rounded-3 shadow-sm border-info">
-                <div class="card-header py-3 text-bg-info border-info">
-                  <h4 class="my-0 fw-normal">Business site</h4>
-                </div>
-                <div class="card-body">
-                  <h1 class="card-title pricing-card-title">
-                    ₹7999<small class="text-body-secondary fw-light"
-                      >/website</small
-                    >
-                  </h1>
-                  <ul class="list-unstyled mt-3 mb-4">
-                    <li>Up to 12 pages</li>
-                    <li>Advanced UI with animations</li>
-                    <li>Blog or portfolio section</li>
-                    <li>Performance & SEO optimization</li>
-                    <li>3 months priority support and updates</li>
-                  </ul>
-                  <a href="./contact.html" type="button" class="w-100 btn btn-lg btn-info">
-                    Contact us
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <h2 class="display-6 text-center mb-4 fs-1">Compare plans</h2>
-          <div class="table-responsive">
-            <table class="table table-custom text-center">
-              <thead>
-                <tr>
-                  <th style="width: 34%"></th>
-                  <th style="width: 22%" class="text-info fs-4">Starter</th>
-                  <th style="width: 22%" class="text-info fs-4">Growth</th>
-                  <th style="width: 22%" class="text-info fs-4">Business</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row" class="text-start fs-5">Pages included</th>
-                  <td>
-                    <p class="fs-5">3</p>
-                  </td>
-                  <td>
-                    <p class="fs-5">6</p>
-                  </td>
-                  <td>
-                    <p class="fs-5">12</p>
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row" class="text-start fs-5">Custom Design</th>
-                  <td>
-                    <p class="fs-5">Basic</p>
-                  </td>
-                  <td>
-                    <p class="fs-5">Advanced</p>
-                  </td>
-                  <td>
-                    <p class="fs-5">Premium</p>
-                  </td>
-                </tr>
-              </tbody>
-              <tbody>
-                <tr>
-                  <th scope="row" class="text-start fs-5">Mobile Responsive</th>
-                  <td>
-                    <img
-                      src="./tick.svg"
-                      class="bi"
-                      width="24"
-                      height="24"
-                      aria-hidden="true"
-                      alt="tick"
-                    />
-                  </td>
-                  <td>
-                    <img
-                      src="./tick.svg"
-                      class="bi"
-                      width="24"
-                      height="24"
-                      aria-hidden="true"
-                      alt="tick"
-                    />
-                  </td>
-                  <td>
-                    <img
-                      src="./tick.svg"
-                      class="bi"
-                      width="24"
-                      height="24"
-                      aria-hidden="true"
-                      alt="tick"
-                    />
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row" class="text-start fs-5">
-                    Contact / Enquiry forms
-                  </th>
-                  <td>
-                    <p class="fs-5">Basic</p>
-                  </td>
-                  <td>
-                    <p class="fs-5">Better</p>
-                  </td>
-                  <td>
-                    <p class="fs-5">Advanced</p>
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row" class="text-start fs-5">
-                    Blog / Portfolio section
-                  </th>
-                  <td><p class="fs-5">Unavailable</p></td>
-                  <td>
-                    <p class="fs-5">Optional</p>
-                  </td>
-                  <td>
-                    <img
-                      src="./tick.svg"
-                      class="bi"
-                      width="24"
-                      height="24"
-                      aria-hidden="true"
-                      alt="tick"
-                    />
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row" class="text-start fs-5">SEO Optimization</th>
-                  <td><p class="fs-5">Basic</p></td>
-                  <td><p class="fs-5">Standard</p></td>
-                  <td>
-                    <p class="fs-5">Advanced</p>
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row" class="text-start fs-5">
-                    Post-Launch support
-                  </th>
-                  <td><p class="fs-5">7 Days</p></td>
-                  <td>
-                    <p class="fs-5">1 Month</p>
-                  </td>
-                  <td>
-                    <p class="fs-5">3 Months</p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </main>
+          </main>
+        </div>
       </div>
     </section>
     <section class="footer">
@@ -391,7 +410,9 @@
             >
           </li>
           <li class="nav-item">
-            <a href="./contact.html" class="nav-link px-2 text-body-secondary fs-5"
+            <a
+              href="./contact.html"
+              class="nav-link px-2 text-body-secondary fs-5"
               >Contact Us</a
             >
           </li>
@@ -406,3 +427,5 @@
     ></script>
   </body>
 </html>
+
+
