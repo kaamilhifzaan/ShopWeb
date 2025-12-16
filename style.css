@@ -1,3 +1,15 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+html, body {
+  overflow-x: hidden;
+}
+img, picture, video, canvas, svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 .icon-square {
   width: 3rem;
   height: 3rem;
@@ -8,9 +20,10 @@ body {
 }
 .carousel {
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   margin: 0rem;
   overflow: hidden;
+  max-width: 100%;
 }
 #image-track > .image {
   width: 40vmin;
@@ -24,8 +37,16 @@ body {
   position: absolute;
   left: 50%;
   top: 55%;
-  transform: translate(0%, -50%);
+  transform: translate(-50%, -50%);
+  touch-action: pan-y; 
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: grab;
+  width: max-content;
 }
+#image-track:active {
+  cursor: grabbing;
+}    
 .icon-svg {
   width: 2rem;
   height: auto;
@@ -42,9 +63,6 @@ html {
   user-select: none;
 }
 
-.card-frame img {
-  border-radius: 1.25rem;
-}
 .card-frame {
   max-width: 100%;
   display: inline-block;
@@ -53,4 +71,29 @@ html {
   background: rgba(200, 200, 200, 0.25);
   border: 1px solid rgba(230, 230, 230, 0.6);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+  overflow: hidden; 
+}
+.card-frame img {
+  width: 100%;
+  height: auto;
+  border-radius: 1.25rem;
+  display: block;
+}
+
+@media (max-width: 575.98px) {
+  .card-frame {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0.675rem;      
+    padding-left: 0.9rem;
+    padding-right: 0rem;
+  }
+  .card-frame img {
+    width: 100%;
+    height: auto;
+    max-width: calc(100% - 1.08rem);
+    max-height: 40.5vh;
+    object-fit: cover;
+    display: block;
+  }
 }
